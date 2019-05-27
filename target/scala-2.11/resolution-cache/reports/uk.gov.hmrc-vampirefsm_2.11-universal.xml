@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="universal"
 		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, debian, it, compile-internal, runtime-internal, test-internal, it-internal, plugin, sources, docs, pom, scala-tool, scalafmt, scoveragePlugin"
-		date="20190527110114"/>
+		date="20190527132352"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>

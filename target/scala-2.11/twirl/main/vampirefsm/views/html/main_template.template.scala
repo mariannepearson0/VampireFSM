@@ -80,7 +80,7 @@ Seq[Any](format.raw/*8.135*/("""
 object main_template extends main_template_Scope0.main_template_Scope1.main_template
               /*
                   -- GENERATED --
-                  DATE: Mon May 27 11:01:14 BST 2019
+                  DATE: Mon May 27 13:23:52 BST 2019
                   SOURCE: /Users/mariannepearson/Documents/VampireFSM/app/vampirefsm/views/main_template.scala.html
                   HASH: 1f95c08880381ba65a9c1fefb2a52c5856601c7e
                   MATRIX: 843->76|1221->378|1248->396|1326->404|1341->411|1422->415|1454->421|1489->447|1529->449|1566->459|1582->466|1646->509|1682->515|1724->375|1754->401|1783->517|1812->520|2156->843

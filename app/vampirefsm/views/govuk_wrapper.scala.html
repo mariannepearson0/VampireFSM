@@ -19,13 +19,13 @@
     <meta name="format-detection" content="telephone=no"/>
 }
 
-@titleWithSuffix = @{ title + " - " + Messages("servicename.titleSuffix") }
+@titleWithSuffix = @{title}
 
 @headerNavLinks = {}
 
 @insideHeader = {
 @uiLayouts.header_nav(
-    navTitle = Some(Messages("app.name")),
+    navTitle = Some("Vampire Checker"),
     navTitleLink = None,
     showBetaLink = false,
     navLinks = Some(headerNavLinks))
@@ -62,17 +62,12 @@
 }
 }
 
-@getHelpForm = @{
-    uiHelpers.reportAProblemLink(configuration.getString("reportAProblemPartialUrl").get, configuration.getString("reportAProblemNonJSUrl").get)
-}
-
 @content = {
 @uiLayouts.main_content(article = mainContent,
     mainClass = mainClass,
     mainDataAttributes = mainDataAttributes,
     mainContentHeader = mainContentHeader,
     serviceInfo = serviceInfo,
-    getHelpForm = getHelpForm,
     sidebar = sidebar)
 }
 

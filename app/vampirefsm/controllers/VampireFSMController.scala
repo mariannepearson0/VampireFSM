@@ -10,21 +10,19 @@ import play.api.mvc._
 import play.api.{Configuration, Environment}
 import uk.gov.hmrc.agentmtdidentifiers.model.Arn
 import uk.gov.hmrc.http.HeaderCarrier
-import vampirefsm.connectors.{FrontendAuthConnector, VampirecheckerConnector}
-import vampirefsm.models.{AuthorisedAgent, VampirecheckerFrontendModel}
-import vampirefsm.views.html
 import uk.gov.hmrc.play.bootstrap.controller.FrontendController
-import uk.gov.hmrc.play.fsm.{JourneyController, JourneyService}
+import uk.gov.hmrc.play.fsm.JourneyController
+import vampirefsm.connectors.FrontendAuthConnector
 import vampirefsm.journeys.VampireFSMJourneyModel.State._
 import vampirefsm.journeys.VampireFSMJourneyModel.Transitions._
+import vampirefsm.views.html
 
-import scala.concurrent.{ExecutionContext, Future}
+import scala.concurrent.ExecutionContext
 
 @Singleton
 class VampireFSMController @Inject()(
     override val messagesApi: MessagesApi,
     val journeyService: VampireFSMJourneyService,
-    vampirecheckerConnector: VampirecheckerConnector,
     val authConnector: FrontendAuthConnector,
     val env: Environment)(implicit val configuration: Configuration,
                           ec: ExecutionContext)
@@ -106,7 +104,6 @@ class VampireFSMController @Inject()(
 
 object VampireFSMController {
 
-  import vampirefsm.controllers.FieldMappings._
   import play.api.data.Form
 
   def confirmationChoice(errorMessage: String): Constraint[String] =

@@ -1898,3 +1898,47 @@ Unspecified value parameter likelihood.]
 2019-05-27 12:36:27,143 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-18] message=[Application started (Dev)] 
 2019-05-27 12:36:56,172 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-7] message=[Application started (Dev)] 
 2019-05-27 12:39:13,976 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-13] message=[Application started (Dev)] 
+2019-05-27 12:50:40,887 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-4] message=[Application started (Dev)] 
+2019-05-27 12:53:47,621 level=[INFO] logger=[play.api.Play] thread=[ForkJoinPool-1-worker-9] message=[Application started (Dev)] 
+2019-05-27 12:54:51,078 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-17] message=[Application started (Dev)] 
+2019-05-27 12:56:48,546 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-3] message=[Application started (Dev)] 
+2019-05-27 12:58:48,575 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-9] message=[Application started (Dev)] 
+2019-05-27 13:03:08,666 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-6] message=[Application started (Dev)] 
+2019-05-27 13:03:33,564 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-10] message=[Application started (Dev)] 
+2019-05-27 13:04:05,915 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-2] message=[Application started (Dev)] 
+2019-05-27 13:04:41,714 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-12] message=[Application started (Dev)] 
+2019-05-27 13:26:36,660 level=[INFO] logger=[play.api.Play] thread=[application-akka.actor.default-dispatcher-12] message=[Application started (Dev)] 
+2019-05-27 13:26:36,845 level=[ERROR] logger=[application] thread=[application-akka.actor.default-dispatcher-2] message=[
+
+! Internal server error, for (POST) [/vampirechecker/start] ->
+ ] exception=[uk.gov.hmrc.auth.core.MissingBearerToken: Bearer token not supplied
+	at uk.gov.hmrc.auth.core.AuthorisationException$.fromString(exceptions.scala:53)
+	at uk.gov.hmrc.auth.core.AuthenticateHeaderParser$.parse(AuthConnector.scala:69)
+	at uk.gov.hmrc.auth.core.PlayAuthConnector$$anonfun$authorise$1.applyOrElse(AuthConnector.scala:54)
+	at uk.gov.hmrc.auth.core.PlayAuthConnector$$anonfun$authorise$1.applyOrElse(AuthConnector.scala:52)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at com.github.rishabh9.MDCPropagatingDispatcher$$anon$1$$anon$2.run(MDCPropagatingDispatcherConfigurator.scala:71)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+]
+uk.gov.hmrc.auth.core.MissingBearerToken: Bearer token not supplied
+	at uk.gov.hmrc.auth.core.AuthorisationException$.fromString(exceptions.scala:53)
+	at uk.gov.hmrc.auth.core.AuthenticateHeaderParser$.parse(AuthConnector.scala:69)
+	at uk.gov.hmrc.auth.core.PlayAuthConnector$$anonfun$authorise$1.applyOrElse(AuthConnector.scala:54)
+	at uk.gov.hmrc.auth.core.PlayAuthConnector$$anonfun$authorise$1.applyOrElse(AuthConnector.scala:52)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at com.github.rishabh9.MDCPropagatingDispatcher$$anon$1$$anon$2.run(MDCPropagatingDispatcherConfigurator.scala:71)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:44)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)

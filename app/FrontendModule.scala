@@ -1,21 +1,14 @@
 import java.net.URL
-import javax.inject.{Inject, Provider, Singleton}
 
 import com.google.inject.AbstractModule
-import com.google.inject.name.{Named, Names}
-import org.slf4j.MDC
+import com.google.inject.name.Names
+import javax.inject.Provider
 import play.api.{Configuration, Environment, Logger}
-import vampirefsm.connectors.FrontendAuthConnector
 import uk.gov.hmrc.auth.core.AuthConnector
 import uk.gov.hmrc.http._
-import uk.gov.hmrc.play.audit.http.HttpAuditing
-import uk.gov.hmrc.play.audit.http.connector.AuditConnector
-import uk.gov.hmrc.play.config.ServicesConfig
-import uk.gov.hmrc.play.http.ws.WSHttp
 import uk.gov.hmrc.play.bootstrap.http.DefaultHttpClient
-import com.typesafe.config.Config
-import play.api.Configuration
-import akka.actor.ActorSystem
+import uk.gov.hmrc.play.config.ServicesConfig
+import vampirefsm.connectors.FrontendAuthConnector
 
 class FrontendModule(val environment: Environment,
                      val configuration: Configuration)
@@ -26,7 +19,7 @@ class FrontendModule(val environment: Environment,
   override protected def mode = environment.mode
 
   def configure(): Unit = {
-    val appName = "vampirechecker-frontend"
+    val appName = "vampirefsm"
 
     Logger(getClass).info(
       s"Starting microservice : $appName : in mode : ${environment.mode}")
@@ -37,11 +30,9 @@ class FrontendModule(val environment: Environment,
     bind(classOf[HttpPost]).to(classOf[DefaultHttpClient])
     bind(classOf[AuthConnector]).to(classOf[FrontendAuthConnector])
 
-    //example of service property bindings
     bindIntegerProperty("mongodb.session.expireAfterSeconds")
 
     bindBaseUrl("auth")
-    bindBaseUrl("vampirechecker")
   }
 
   private def bindBaseUrl(serviceName: String) =
@@ -79,9 +70,10 @@ class FrontendModule(val environment: Environment,
           s"No value found for configuration property $confKey"))
   }
 
-  import scala.reflect.ClassTag
   import com.google.inject.binder.ScopedBindingBuilder
   import com.google.inject.name.Names.named
+
+  import scala.reflect.ClassTag
 
   private def bindServiceConfigProperty[A](propertyName: String)(
       implicit classTag: ClassTag[A],

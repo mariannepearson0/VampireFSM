@@ -3,7 +3,7 @@
 
 @(likelihood: String)(implicit request: Request[_], messages: Messages, config: Configuration)
 
-@vampirefsm.views.html.main_template(title = Messages("start.title"), bodyClasses = None) {
+@vampirefsm.views.html.main_template(title = "Vampire result", bodyClasses = None) {
 
     @if(likelihood == "definitely") {
         <h1 class="heading-xlarge">You are definitely a vampire!</h1>

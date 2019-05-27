@@ -31,7 +31,7 @@ class bite_marks extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,
 
 Seq[Any](format.raw/*6.105*/("""
 
-"""),_display_(/*8.2*/vampirefsm/*8.12*/.views.html.main_template(title = Messages("start.title"), bodyClasses = None)/*8.90*/ {_display_(Seq[Any](format.raw/*8.92*/("""
+"""),_display_(/*8.2*/vampirefsm/*8.12*/.views.html.main_template(title = "Do you have any noticeable bite marks?", bodyClasses = None)/*8.107*/ {_display_(Seq[Any](format.raw/*8.109*/("""
 
     """),format.raw/*10.5*/("""<h1 class="heading-xlarge">Do you have any noticeable bite marks?</h1>
 
@@ -77,10 +77,10 @@ Seq[Any](format.raw/*6.105*/("""
 object bite_marks extends bite_marks_Scope0.bite_marks_Scope1.bite_marks
               /*
                   -- GENERATED --
-                  DATE: Mon May 27 12:24:10 BST 2019
+                  DATE: Mon May 27 13:23:52 BST 2019
                   SOURCE: /Users/mariannepearson/Documents/VampireFSM/app/vampirefsm/views/bite_marks.scala.html
-                  HASH: 8580c17d5e688a377f4b1653311344eec3c93b95
-                  MATRIX: 864->177|1063->280|1091->283|1109->293|1195->371|1234->373|1267->379|1370->456|1421->498|1460->499|1498->510|1844->835|1881->845|2037->971|2071->975
+                  HASH: d6570dee820ef7f2844edd0dac750b7bd3aad84d
+                  MATRIX: 864->177|1063->280|1091->283|1109->293|1213->388|1253->390|1286->396|1389->473|1440->515|1479->516|1517->527|1863->852|1900->862|2056->988|2090->992
                   LINES: 27->6|32->6|34->8|34->8|34->8|34->8|36->10|38->12|38->12|38->12|40->14|46->20|48->22|51->25|54->28
                   -- GENERATED --
               */

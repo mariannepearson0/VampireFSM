@@ -7,7 +7,7 @@
 		revision="0.1.0-SNAPSHOT"
 		conf="compile-internal"
 		confs="universal, universal-docs, universal-src, compile, runtime, test, provided, optional, windows, docker, linux, rpm, debian, it, compile-internal, runtime-internal, test-internal, it-internal, plugin, sources, docs, pom, scala-tool, scalafmt, scoveragePlugin"
-		date="20190527110114"/>
+		date="20190527132352"/>
 	<dependencies>
 		<module organisation="uk.gov.hmrc" name="mongo-caching_2.11">
 			<revision name="6.4.0-play-25" status="release" pubdate="20190415164307" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/hmrc/mongo-caching" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="92">

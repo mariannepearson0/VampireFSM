@@ -16,18 +16,18 @@ case object BuildInfo {
   val builtAt = "2019-05-27"
   /** The value is "master". */
   val GitBranch = "master"
-  /** The value is "bbdd07e86f2eac4b87be2629ab44a2aa7c1e16a0". */
-  val GitHeadRev = "bbdd07e86f2eac4b87be2629ab44a2aa7c1e16a0"
+  /** The value is "6bbb6e12ffc53f17f163032e01a12904ac18bd30". */
+  val GitHeadRev = "6bbb6e12ffc53f17f163032e01a12904ac18bd30"
   /** The value is "false". */
   val GitRepoIsClean = "false"
-  /** The value is "2019-05-25T17:44:47.000+01:00". */
-  val GitCommitDate = "2019-05-25T17:44:47.000+01:00"
-  /** The value is "GitHub". */
-  val GitCommitAuthor = "GitHub"
-  /** The value is "2019-05-27T12:29:24.350+01:00". */
-  val BuildDate = "2019-05-27T12:29:24.350+01:00"
-  /** The value is "bbdd07e86f2eac4b87be2629ab44a2aa7c1e16a0". */
-  val GitDescribe = "bbdd07e86f2eac4b87be2629ab44a2aa7c1e16a0"
+  /** The value is "2019-05-27T12:41:17.000+01:00". */
+  val GitCommitDate = "2019-05-27T12:41:17.000+01:00"
+  /** The value is "Marianne Pearson". */
+  val GitCommitAuthor = "Marianne Pearson"
+  /** The value is "2019-05-27T12:53:15.996+01:00". */
+  val BuildDate = "2019-05-27T12:53:15.996+01:00"
+  /** The value is "6bbb6e12ffc53f17f163032e01a12904ac18bd30". */
+  val GitDescribe = "6bbb6e12ffc53f17f163032e01a12904ac18bd30"
   override val toString = "name: %s, version: %s, scalaVersion: %s, sbtVersion: %s, libraryDependencies: %s, builtAt: %s, GitBranch: %s, GitHeadRev: %s, GitRepoIsClean: %s, GitCommitDate: %s, GitCommitAuthor: %s, BuildDate: %s, GitDescribe: %s" format (name, version, scalaVersion, sbtVersion, libraryDependencies, builtAt, GitBranch, GitHeadRev, GitRepoIsClean, GitCommitDate, GitCommitAuthor, BuildDate, GitDescribe)
 
   val toMap = Map[String, Any](

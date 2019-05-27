@@ -31,7 +31,7 @@ class age extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[
 
 Seq[Any](format.raw/*5.96*/("""
 
-"""),_display_(/*7.2*/vampirefsm/*7.12*/.views.html.main_template(title = Messages("start.title"), bodyClasses = None)/*7.90*/ {_display_(Seq[Any](format.raw/*7.92*/("""
+"""),_display_(/*7.2*/vampirefsm/*7.12*/.views.html.main_template(title = "How old are you?", bodyClasses = None)/*7.85*/ {_display_(Seq[Any](format.raw/*7.87*/("""
 
     """),format.raw/*9.5*/("""<h1 class="heading-xlarge">How old are you?</h1>
 
@@ -73,10 +73,10 @@ Seq[Any](format.raw/*5.96*/("""
 object age extends age_Scope0.age_Scope1.age
               /*
                   -- GENERATED --
-                  DATE: Mon May 27 12:23:43 BST 2019
+                  DATE: Mon May 27 13:23:52 BST 2019
                   SOURCE: /Users/mariannepearson/Documents/VampireFSM/app/vampirefsm/views/age.scala.html
-                  HASH: 74723eb8ff55dd2cae3d1c7fe9a68ac0ccd35555
-                  MATRIX: 839->176|1028->270|1056->273|1074->283|1160->361|1199->363|1231->369|1312->424|1400->503|1440->505|1478->516|1794->811|1831->821|1968->928|2000->930
+                  HASH: 99d3b70234f30e13e48c78363cc7dfdf5da0d7f5
+                  MATRIX: 839->176|1028->270|1056->273|1074->283|1155->356|1194->358|1226->364|1307->419|1395->498|1435->500|1473->511|1789->806|1826->816|1963->923|1995->925
                   LINES: 27->5|32->5|34->7|34->7|34->7|34->7|36->9|38->11|39->12|39->12|41->14|46->19|48->21|49->22|50->23
                   -- GENERATED --
               */

@@ -1,7 +1,6 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
 [0m[[0mdebug[0m] [0m	(/Users/mariannepearson/Documents/VampireFSM/conf/logback.xml,/Users/mariannepearson/Documents/VampireFSM/target/scala-2.11/classes/logback.xml)[0m
 [0m[[0mdebug[0m] [0m	(/Users/mariannepearson/Documents/VampireFSM/conf/prod.routes,/Users/mariannepearson/Documents/VampireFSM/target/scala-2.11/classes/prod.routes)[0m
-[0m[[0mdebug[0m] [0m	(/Users/mariannepearson/Documents/VampireFSM/conf/messages,/Users/mariannepearson/Documents/VampireFSM/target/scala-2.11/classes/messages)[0m
 [0m[[0mdebug[0m] [0m	(/Users/mariannepearson/Documents/VampireFSM/conf/app.routes,/Users/mariannepearson/Documents/VampireFSM/target/scala-2.11/classes/app.routes)[0m
 [0m[[0mdebug[0m] [0m	(/Users/mariannepearson/Documents/VampireFSM/conf/application-json-logger.xml,/Users/mariannepearson/Documents/VampireFSM/target/scala-2.11/classes/application-json-logger.xml)[0m
 [0m[[0mdebug[0m] [0m	(/Users/mariannepearson/Documents/VampireFSM/conf/application.conf,/Users/mariannepearson/Documents/VampireFSM/target/scala-2.11/classes/application.conf)[0m

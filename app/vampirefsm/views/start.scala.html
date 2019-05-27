@@ -4,12 +4,14 @@
 
 @()(implicit request: Request[_], messages: Messages, config: Configuration)
 
-@vampirefsm.views.html.main_template(title = Messages("start.title"), bodyClasses = None) {
+@vampirefsm.views.html.main_template(title = "Vampire Checker", bodyClasses = None) {
 
-    <h1 class="heading-xlarge">@Messages("start.label")</h1>
+    <h1 class="heading-xlarge">Vampire Checker</h1>
 
-    <p>@Messages("start.intro")</p>
-    <p>@Messages("start.p2")</p>
+    <p>Having unusual sympotoms?</p>
+    <p>Used to love a steak slathered in garlic butter but now it terrifies you?</p>
+    <p>Starting to sympathise with Nosferatu?</p>
+    <strong style="font-weight: bold">Take our test now and get a head start on your immortality!</strong>
 
     <p>
         @form(VampireFSMController.submitStart) {

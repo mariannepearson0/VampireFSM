@@ -4,7 +4,7 @@
 
 @(ageForm : Form[Int])(implicit request: Request[_], messages: Messages, config: Configuration)
 
-@vampirefsm.views.html.main_template(title = Messages("start.title"), bodyClasses = None) {
+@vampirefsm.views.html.main_template(title = "How old are you?", bodyClasses = None) {
 
     <h1 class="heading-xlarge">How old are you?</h1>
 

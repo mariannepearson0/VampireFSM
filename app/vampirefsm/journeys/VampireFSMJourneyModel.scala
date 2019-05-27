@@ -12,8 +12,8 @@ object VampireFSMJourneyModel extends JourneyModel {
   object State {
     case object Start extends State
     case object Age extends State
-    case class BiteMarks(paleLevel: Int) extends State
-    case class Sun(paleLevel: Int, hasBiteMarks: Boolean) extends State
+    case class BiteMarks(ageRange: Int) extends State
+    case class Sun(ageRange: Int, hasBiteMarks: Boolean) extends State
     case class End(result: String) extends State
   }
 
@@ -30,14 +30,14 @@ object VampireFSMJourneyModel extends JourneyModel {
     }
 
     def selectedBiteMarks(arn: Arn)(hasBiteMarks: Boolean) = Transition {
-      case BiteMarks(paleLevel) => goto(Sun(paleLevel, hasBiteMarks))
+      case BiteMarks(ageRange) => goto(Sun(ageRange, hasBiteMarks))
     }
 
     def selectedSun(arn: Arn)(reactionToSun: String) = Transition {
-      case Sun(paleLevel, hasBiteMarks) =>
-        if (paleLevel > 2 && hasBiteMarks && reactionToSun == "fire")
+      case Sun(ageRange, hasBiteMarks) =>
+        if (ageRange > 2 && hasBiteMarks && reactionToSun == "fire")
           goto(End("definitely"))
-        else if (paleLevel < 3 && !hasBiteMarks && reactionToSun == "tan")
+        else if (ageRange < 3 && !hasBiteMarks && reactionToSun == "tan")
           goto(End("definitelyNot"))
         else goto(End("maybe"))
     }

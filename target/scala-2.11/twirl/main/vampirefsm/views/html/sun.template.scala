@@ -31,7 +31,7 @@ class sun extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[
 
 Seq[Any](format.raw/*5.98*/("""
 
-"""),_display_(/*7.2*/vampirefsm/*7.12*/.views.html.main_template(title = Messages("start.title"), bodyClasses = None)/*7.90*/ {_display_(Seq[Any](format.raw/*7.92*/("""
+"""),_display_(/*7.2*/vampirefsm/*7.12*/.views.html.main_template(title = "How sensitive are you to the sun?", bodyClasses = None)/*7.102*/ {_display_(Seq[Any](format.raw/*7.104*/("""
 
     """),format.raw/*9.5*/("""<h1 class="heading-xlarge">How sensitive are you to the sun?</h1>
 
@@ -74,10 +74,10 @@ Seq[Any](format.raw/*5.98*/("""
 object sun extends sun_Scope0.sun_Scope1.sun
               /*
                   -- GENERATED --
-                  DATE: Mon May 27 12:28:43 BST 2019
+                  DATE: Mon May 27 13:23:52 BST 2019
                   SOURCE: /Users/mariannepearson/Documents/VampireFSM/app/vampirefsm/views/sun.scala.html
-                  HASH: 968ef57ac38c3658034825994346ba43a3a1038d
-                  MATRIX: 842->176|1033->272|1061->275|1079->285|1165->363|1204->365|1236->371|1334->443|1422->522|1462->524|1500->535|1845->859|1882->869|2019->976|2052->979
+                  HASH: a05ec9e954605344b9bd7b8cf7f6ee5ae689d04e
+                  MATRIX: 842->176|1033->272|1061->275|1079->285|1178->375|1218->377|1250->383|1348->455|1436->534|1476->536|1514->547|1859->871|1896->881|2033->988|2066->991
                   LINES: 27->5|32->5|34->7|34->7|34->7|34->7|36->9|38->11|39->12|39->12|41->14|46->19|48->21|49->22|51->24
                   -- GENERATED --
               */
