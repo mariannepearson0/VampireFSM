@@ -1,0 +1,24 @@
+@import vampirefsm.controllers.routes.VampireFSMController
+@import play.api.Configuration
+@import uk.gov.hmrc.play.views.html.helpers.{errorSummary, form, input_radio_group}
+
+@(sunForm: Form[String])(implicit request: Request[_], messages: Messages, config: Configuration)
+
+@vampirefsm.views.html.main_template(title = Messages("start.title"), bodyClasses = None) {
+
+    <h1 class="heading-xlarge">How sensitive are you to the sun?</h1>
+
+    @form(action = VampireFSMController.submitSun,
+        'class -> "form js-form") {
+
+        @input_radio_group(
+            sunForm("sun"),
+            Seq(("tan", "Low - I tan easily"),("mid", "Medium - I'm partial to sunburn"), ("fire", "High - I burst into flames")),
+            '_groupDivClass -> "form-group soft--ends margin-bottom-10",
+            '_fieldsetAttributes -> Html("""id='clientType'""")
+        )
+
+        <button class="button form-field--submit margin-top-20" type="submit" id="continue">Continue</button>
+    }
+
+}

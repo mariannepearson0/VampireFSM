@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: uk.gov.hmrc:play-fsm_2.11:0.37.0-play-25:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/uk.gov.hmrc/play-fsm_2.11/jars/play-fsm_2.11-0.37.0-play-25.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/uk.gov.hmrc/play-fsm_2.11/srcs/play-fsm_2.11-0.37.0-play-25-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

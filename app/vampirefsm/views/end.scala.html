@@ -1,0 +1,25 @@
+@import vampirefsm.controllers.routes.VampireFSMController
+@import play.api.Configuration
+
+@(likelihood: String)(implicit request: Request[_], messages: Messages, config: Configuration)
+
+@vampirefsm.views.html.main_template(title = Messages("start.title"), bodyClasses = None) {
+
+    @if(likelihood == "definitely") {
+        <h1 class="heading-xlarge">You are definitely a vampire!</h1>
+        <p>Your hunch was right, you're a certified bloodsucker.
+            But don't be too disheartened, you have an eternity to get used to it!
+           Find a clan to protect you and start piling up those victims.
+        </p>
+    }
+    @if(likelihood == "maybe") {
+        <h1 class="heading-xlarge">You might be a vampire!</h1>
+        <p>Keep tracking your symptoms and if they get any worse take the test again.
+        Start thinking about how you're going to say goodbye to your loved ones.</p>
+    }
+    @if(likelihood == "definitelyNot") {
+        <h1 class="heading-xlarge">You are definitely not a vampire!</h1>
+        <p>Congratulations you're not a vampire.
+            If you are disappointed with the result of this test walk around alone in graveyards at night.</p>
+    }
+}

@@ -1,0 +1,48 @@
+@import play.api.Configuration
+
+@import vampirefsm.controllers.routes.VampireFSMController
+@import vampirefsm.models.VampirecheckerFrontendModel
+
+@(vampirecheckerFrontendForm : Form[VampirecheckerFrontendModel])(implicit request: Request[_], messages: Messages, config: Configuration)
+
+@vampirefsm.views.html.main_template(title = Messages("summary.title"), bodyClasses = None) {
+
+        <h1 class="heading-xlarge">@Messages("summary.label")</h1>
+
+
+        <dl class="govuk-check-your-answers cya-questions-short">
+            <div>
+                <dt class="cya-question">
+                    @Messages("summary.header.parameters")
+                </dt>
+                <dd class="cya-answer" id="parameter1">
+                    @vampirecheckerFrontendForm("parameter1").value
+                </dd>
+                <dd class="cya-change">
+                    <a href="#">
+                      @Messages("summary.link.change")
+                      <span class="visuallyhidden">@Messages("summary.header.parameters")</span>
+                    </a>
+                </dd>
+            </div>
+            <div>
+                <dt class="cya-question">
+                    @Messages("summary.header.contactDetails")
+                </dt>
+                <dd class="cya-answer" id="contactDetails">
+                    @if(vampirecheckerFrontendForm("emailAddress").value){<span class="display-block">}@vampirecheckerFrontendForm("emailAddress").value @if(vampirecheckerFrontendForm("emailAddress").value){</span>}
+                    @if(vampirecheckerFrontendForm("telephoneNumber").value){<span class="display-block">}@vampirecheckerFrontendForm("telephoneNumber").value @if(vampirecheckerFrontendForm("telephoneNumber").value){</span>}
+                </dd>
+                <dd class="cya-change">
+                    <a href="#">
+                      @Messages("summary.link.change")
+                      <span class="visuallyhidden">@Messages("summary.header.contactDetails")</span>
+                    </a>
+                </dd>
+            </div>
+        </dl>
+
+        <a href="#" class="button form-field--submit" href="@VampireFSMController.start" role="button">@Messages("button.submit")</a>
+
+
+}

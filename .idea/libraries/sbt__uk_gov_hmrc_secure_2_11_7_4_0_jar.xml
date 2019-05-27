@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: uk.gov.hmrc:secure_2.11:7.4.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/uk.gov.hmrc/secure_2.11/jars/secure_2.11-7.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/uk.gov.hmrc/secure_2.11/srcs/secure_2.11-7.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: uk.gov.hmrc:play-partials_2.11:6.5.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/uk.gov.hmrc/play-partials_2.11/jars/play-partials_2.11-6.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/uk.gov.hmrc/play-partials_2.11/srcs/play-partials_2.11-6.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

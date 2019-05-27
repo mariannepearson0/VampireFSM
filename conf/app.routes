@@ -1,0 +1,12 @@
+# microservice specific routes
+
+GET         /                  @vampirefsm.controllers.VampireFSMController.root
+GET         /start             @vampirefsm.controllers.VampireFSMController.start
+POST        /start             @vampirefsm.controllers.VampireFSMController.submitStart
+GET         /age               @vampirefsm.controllers.VampireFSMController.showAge
+POST        /age               @vampirefsm.controllers.VampireFSMController.submitAge
+GET         /bite-marks        @vampirefsm.controllers.VampireFSMController.showBiteMarks
+POST        /bite-marks        @vampirefsm.controllers.VampireFSMController.submitBiteMarks
+GET         /sun               @vampirefsm.controllers.VampireFSMController.showSun
+POST        /sun               @vampirefsm.controllers.VampireFSMController.submitSun
+GET         /end               @vampirefsm.controllers.VampireFSMController.showEnd
